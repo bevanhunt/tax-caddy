@@ -1,12 +1,7 @@
-:80 {
+api.crypto-taxes.tax {
     gzip
-    browse
-    prometheus 0.0.0.0:9180
     log stdout
     errors stderr
-
-    ext .md
-    markdown
+    tls admin@crypto-taxes.tax
+    proxy / localhost:8000
 }
-
-

@@ -1,7 +1,7 @@
 # Build image
-FROM golang:1.9-alpine as builder
+FROM golang:1.11.2-alpine as builder
 
-ARG CADDY_VERSION="0.10.10"
+ARG CADDY_VERSION="0.11.1"
 
 RUN apk add --no-cache git
 
@@ -23,7 +23,7 @@ RUN cd /go/src/github.com/mholt/caddy/caddy \
     && mv caddy /go/bin
 
 # Dist image
-FROM alpine:3.6
+FROM alpine:latest
 
 # install deps
 RUN apk add --no-cache --no-progress curl tini ca-certificates
