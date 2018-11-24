@@ -3,5 +3,5 @@ api.crypto-taxes.tax {
     log stdout
     errors stderr
     tls admin@crypto-taxes.tax
-    proxy / localhost:8000
+    proxy / 172.16.0.17:8000
 }
