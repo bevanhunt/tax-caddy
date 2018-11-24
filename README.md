@@ -1,7 +1,5 @@
 # caddy-builder
 
-[![Build Status](https://travis-ci.org/openfaas/caddy-builder.svg?branch=master)](https://travis-ci.org/openfaas/caddy-builder)
-
 Build Caddy with plugins from source using Docker multi-build
 
 ### Usage
