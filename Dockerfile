@@ -39,7 +39,6 @@ VOLUME ["/www"]
 WORKDIR /www
 
 COPY Caddyfile /etc/caddy/Caddyfile
-COPY index.md /www/index.md
 
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD ["caddy", "-agree", "--conf", "/etc/caddy/Caddyfile"]
